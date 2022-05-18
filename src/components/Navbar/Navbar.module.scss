@@ -1,0 +1,35 @@
+.container {
+  .nav {
+    margin: 20px;
+    &__items {
+      color: rgba(255, 72, 0, 1);
+      display: flex;
+      justify-content: space-between;
+
+      &__anchors {
+        padding: 20px;
+        font-weight: 600;
+        a {
+          text-decoration: none;
+          color: inherit;
+          margin: 0 12px 0 12px;
+        }
+      }
+
+      &__logo {
+        padding: 10px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    .nav {
+      &__items {
+        &__anchors {
+          display: none;
+        }
+      }
+    }
+  }
+}

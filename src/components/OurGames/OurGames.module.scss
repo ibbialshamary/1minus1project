@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  margin: 40px;
+  @media only screen and (max-width: 414px) {
+    height: unset;
+    text-align: center;
+    display: block;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1, .uppercase {
+      text-transform: uppercase;
+    }
+
+    h1 {
+    font-size: 60px;
+
+    }
+    p.context {
+      max-width: 600px;
+      margin-left: 20%;
+
+    }
+
+    .solid {
+      border-top: 3px solid rgba(255, 72, 0, 1);
+    }
+
+    .uppercase {
+      font-weight: 700;
+      font-size: 30px;
+    }
+
+    .uppercase, h1 span {
+      color: rgba(255, 72, 0, 1);
+    }
+
+    &--funplus {
+      transform: rotate(-90deg);
+    }
+  }
+}
